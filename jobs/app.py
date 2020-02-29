@@ -22,7 +22,7 @@ def execute_sql(sql, values = (), commit = False, single = False):
     cursor = connection.execute(sql, values)
 
     if commit==True:
-        results = connection.commit
+        results = connection.commit()
     else:
         results = cursor.fetchone() if single else cursor.fetchall()
 
