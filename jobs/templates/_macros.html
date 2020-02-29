@@ -3,7 +3,7 @@
 <div class="card adjust-height">
     <header class="card-header">
       <p class="card-header-title">
-          <a>{{ job['title'] }}</a>
+          <a>{{ job['title'] }} {{ url_for('job', job_id=job['id']) }}</a>
       </p>
     </header>
     <div class="card-content">
