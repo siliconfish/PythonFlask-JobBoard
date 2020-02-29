@@ -34,7 +34,7 @@ def close_connection(exception):
     connection = getattr(g, '_connection', None)
 
     if connection!=None:
-        close_connection()
+        connection.close()
 
 @app.route('/')
 @app.route('/jobs')
