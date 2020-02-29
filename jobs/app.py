@@ -7,7 +7,7 @@ from flask import Flask, render_template, g
 app = Flask(__name__)
 
 def open_connection():
-    connection = getattr(g, '_connection')
+    connection = getattr(g, '_connection', None)
     
     if connection==None:
         connection = sqlite3.connect(PATH)
