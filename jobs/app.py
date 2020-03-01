@@ -1,4 +1,5 @@
-import sqlite3, datetime
+import sqlite3
+import datetime
 
 PATH='db/jobs.sqlite'
 
